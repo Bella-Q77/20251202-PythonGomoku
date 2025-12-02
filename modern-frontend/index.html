@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="现代化PC端交互式前端页面">
+    <title>Modern PC Frontend Page</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>ModernUI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#features" class="nav-link">功能</a></li>
+                <li><a href="#services" class="nav-link">服务</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary">登录</button>
+                <button class="btn btn-primary">注册</button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                打造现代化
+                <span class="gradient-text">数字体验</span>
+            </h1>
+            <p class="hero-subtitle">
+                专业的前端解决方案，为您的业务创造卓越的用户体验
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-large">开始使用</button>
+                <button class="btn btn-outline btn-large">了解更多</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <i class="fas fa-laptop-code"></i>
+                <h3>响应式设计</h3>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-palette"></i>
+                <h3>现代UI/UX</h3>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>高性能</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2 class="section-title">核心功能</h2>
+            <p class="section-subtitle">为您的项目提供全方位的解决方案</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>完全响应式</h3>
+                <p>适配各种设备尺寸，从手机到桌面设备，提供一致的用户体验</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>优雅的代码</h3>
+                <p>采用模块化开发，代码结构清晰，易于维护和扩展</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>高性能</h3>
+                <p>优化的加载性能，快速响应用户交互，提升用户满意度</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h3>易于集成</h3>
+                <p>与各种后端服务和API无缝集成，满足您的业务需求</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2 class="section-title">开始您的项目</h2>
+                <p class="section-subtitle">填写表单，我们的专业团队将在24小时内与您联系</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>contact@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>电话</h4>
+                            <p>+86 123 4567 8900</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>地址</h4>
+                            <p>中国·北京·朝阳区</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" placeholder="请输入您的姓名">
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" placeholder="请输入您的邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="subject">主题</label>
+                    <input type="text" id="subject" placeholder="请输入咨询主题">
+                </div>
+                <div class="form-group">
+                    <label for="message">留言</label>
+                    <textarea id="message" placeholder="请输入您的留言"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large btn-fullwidth">
+                    发送消息
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>ModernUI</span>
+                </div>
+                <p>创造卓越的数字体验，赋能您的业务增长</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>功能</h4>
+                <ul>
+                    <li><a href="#">响应式设计</a></li>
+                    <li><a href="#">动画效果</a></li>
+                    <li><a href="#">组件库</a></li>
+                    <li><a href="#">性能优化</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>资源</h4>
+                <ul>
+                    <li><a href="#">文档</a></li>
+                    <li><a href="#">教程</a></li>
+                    <li><a href="#">API参考</a></li>
+                    <li><a href="#">案例研究</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>支持</h4>
+                <ul>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">反馈</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ModernUI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/scripts/main.js"></script>
+</body>
+</html>
